@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/white"
+        android:theme="@style/Theme.PlatziMusic.Red"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/ivLoginLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/width_logo"
+            android:layout_height="@dimen/heigh_logo"
+            android:src="@mipmap/logo" />
+
+    <EditText
+            app:layout_constraintTop_toBottomOf="@id/ivLoginLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/myFirstStyle"
+            android:id="@+id/etLoginUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:drawableStart="@drawable/vector_person_24"
+            android:hint="@string/hint_user" />
+
+    <EditText
+            app:layout_constraintTop_toBottomOf="@id/etLoginUserName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/etLoginPassword"
+            style="@style/myFirstStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:drawableStart="@drawable/vector_baseline_lock_24"
+            android:hint="@string/hint_password"
+            android:autofillHints="" />
+
+    <Button
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_margin="12dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/button_login"
+            android:id="@+id/button2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

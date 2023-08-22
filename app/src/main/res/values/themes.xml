@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PlatziMusic" parent="android:Theme.Material.Light.NoActionBar" />
+  <!-- Base application theme. -->
+    <style name="Base.Theme.PlatziMusic" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    
+    <style name="Theme.PlatziMusic.Red" parent="Theme.PlatziMusic">
+        <item name="backgroundColor">#FFFF0000</item>
+        <item name="android:textColor">#FF00FF00</item>
+    </style>
+
+    <style name="Theme.PlatziMusic.Green" parent="Theme.PlatziMusic">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+</resources>
